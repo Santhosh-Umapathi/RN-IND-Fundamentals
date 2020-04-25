@@ -7,14 +7,18 @@ const HomeScreen = ({navigation}) =>
 
 	return (
   <View style={styles.containerView}>
-			<Text style={styles.text}>RN-IND-Fundamentals</Text>
-			
+   <Text style={styles.text}>RN-IND-Fundamentals</Text>
+
    <Button title="Demo" onPress={() => navigation.navigate("Demo")} />
-	<Button title="Background Changer" onPress={() => navigation.navigate("BGChanger")} />
-			
+   <Button
+    title="Background Changer"
+    onPress={() => navigation.navigate("BGChanger")}
+   />
 
-
-
+   <Button
+    title="Dice Screen"
+    onPress={() => navigation.navigate("Dice")}
+   />
   </View>
  );
 };

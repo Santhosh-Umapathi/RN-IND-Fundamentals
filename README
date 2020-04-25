@@ -15,3 +15,9 @@
 - Math.floor
 - Math.Random
 - String injection
+
+------------------------------------------------------------------
+//MARK: Dice Screen
+
+ - Image source with full require
+ - String Injection not possible with image source

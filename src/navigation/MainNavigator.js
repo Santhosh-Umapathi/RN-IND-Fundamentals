@@ -4,28 +4,28 @@ import { createStackNavigator } from 'react-navigation-stack';
 import HomeScreen from '../screens/HomeScreen';
 import DemoScreen from "../screens/DemoScreen";
 import BackgroundChanger from "../screens/BackgroundChanger";
+import DiceScreen from "../screens/DiceScreen";
 
 const MainNavigator = createStackNavigator(
-{
-	Home: HomeScreen,
-		Demo: DemoScreen,
-	BGChanger: BackgroundChanger,
-},
-{
-	initialRouteName: 'Home',
-	defaultNavigationOptions:
-	{
-		title: 'Home',
-		headerTintColor: 'white', //Header button colors
-		headerStyle:
-		{
-			backgroundColor: 'lightblue' // header bg color
-		},
-		headerTitleStyle: 
-		{
-			color: 'black' // header font color
-		}
-	}
-});
+ {
+  Home: HomeScreen,
+  Demo: DemoScreen,
+  BGChanger: BackgroundChanger,
+  Dice: DiceScreen,
+ },
+ {
+  initialRouteName: "Home",
+  defaultNavigationOptions: {
+   title: "Home",
+   headerTintColor: "white", //Header button colors
+   headerStyle: {
+    backgroundColor: "lightblue", // header bg color
+   },
+   headerTitleStyle: {
+    color: "black", // header font color
+   },
+  },
+ }
+);
 
 export default createAppContainer(MainNavigator);
