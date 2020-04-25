@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { View, Text, TextInput, StyleSheet, TouchableOpacity, Button  } from 'react-native';
+import { View, Text, TextInput, StyleSheet } from 'react-native';
 
 const DemoScreen = ({navigation}) =>
 {
@@ -14,7 +14,7 @@ const DemoScreen = ({navigation}) =>
 				onChangeText={text => setText(text
 					.split(',') //creates a new array after ,
 					.map(text => text && 'John') //map through all elements in array and replaces element with john
-					.join('0') //adds 0 at the end of array
+					.join(' 0 ') //adds 0 at the end of array
 				
 				)}
 				
@@ -31,11 +31,7 @@ const styles = StyleSheet.create({
 		backgroundColor: '#fff',
 		alignItems: 'center',
 		justifyContent: 'center',
-	},
-	text: 
-	{
-		fontSize: 30,
-	},
+	}
 });
 
 export default DemoScreen;

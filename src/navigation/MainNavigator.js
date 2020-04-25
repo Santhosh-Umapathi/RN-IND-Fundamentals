@@ -3,11 +3,13 @@ import { createStackNavigator } from 'react-navigation-stack';
 //Screens
 import HomeScreen from '../screens/HomeScreen';
 import DemoScreen from "../screens/DemoScreen";
+import BackgroundChanger from "../screens/BackgroundChanger";
 
 const MainNavigator = createStackNavigator(
 {
 	Home: HomeScreen,
-	Demo: DemoScreen,
+		Demo: DemoScreen,
+	BGChanger: BackgroundChanger,
 },
 {
 	initialRouteName: 'Home',

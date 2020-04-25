@@ -2,7 +2,16 @@
 
 ------------------------------------------------------------------
 //MARK: DemoScreen
-.map
-.split
-.join
 
+- .map
+- .split
+- .join
+
+------------------------------------------------------------------
+//MARK: Background Changer
+
+- passing method to button
+- passing custom style as 2nd argument to styles object
+- Math.floor
+- Math.Random
+- String injection
