@@ -38,3 +38,10 @@
 
  - Array fill logic
  - .concat (Adds something in the end)
+
+ ------------------------------------------------------------------
+ //MARK: SoundScreen
+
+ - playing sound using expo sound
+ - removing sound listner after played to avoid performace issues
+ - set timeout

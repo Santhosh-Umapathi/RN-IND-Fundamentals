@@ -26,6 +26,11 @@ const HomeScreen = ({navigation}) =>
     title="TicTacToe Screen"
     onPress={() => navigation.navigate("TicTacToe")}
    />
+
+   <Button
+    title="Sound Screen"
+    onPress={() => navigation.navigate("Sound")}
+   />
   </View>
  );
 };
