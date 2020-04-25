@@ -21,3 +21,11 @@
 
  - Image source with full require
  - String Injection not possible with image source
+
+ ------------------------------------------------------------------
+ //MARK: Currency Screen
+
+ - parseFloat
+ - Creating Java object
+ - Passing Java object key value
+ - checking user input if not null

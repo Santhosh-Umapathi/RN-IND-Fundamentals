@@ -15,10 +15,9 @@ const HomeScreen = ({navigation}) =>
     onPress={() => navigation.navigate("BGChanger")}
    />
 
-   <Button
-    title="Dice Screen"
-    onPress={() => navigation.navigate("Dice")}
-   />
+   <Button title="Dice Screen" onPress={() => navigation.navigate("Dice")} />
+
+   <Button title="Currency Screen" onPress={() => navigation.navigate("Currency")} />
   </View>
  );
 };
