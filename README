@@ -28,4 +28,13 @@
  - parseFloat
  - Creating Java object
  - Passing Java object key value
- - checking user input if not null
+ - checking user input if not empty
+ - Keyboard API , dismiss on click outside
+ - Touchable without feedback
+ - expo eject : npm run eject
+
+ ------------------------------------------------------------------
+ //MARK: Tic Tac Toe Screen
+
+ - Array fill logic
+ - .concat (Adds something in the end)

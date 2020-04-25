@@ -6,6 +6,7 @@ import DemoScreen from "../screens/DemoScreen";
 import BackgroundChanger from "../screens/BackgroundChanger";
 import DiceScreen from "../screens/DiceScreen";
 import CurrencyScreen from "../screens/CurrencyScreen";
+import TicTacToeScreen from "../screens/TicTacToeScreen";
 
 
 const MainNavigator = createStackNavigator(
@@ -15,6 +16,7 @@ const MainNavigator = createStackNavigator(
   BGChanger: BackgroundChanger,
   Dice: DiceScreen,
   Currency: CurrencyScreen,
+  TicTacToe: TicTacToeScreen,
  },
  {
   initialRouteName: "Home",

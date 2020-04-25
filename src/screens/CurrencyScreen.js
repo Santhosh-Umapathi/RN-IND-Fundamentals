@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { View, Text, TextInput, StyleSheet, TouchableOpacity, Button  } from 'react-native';
+import { View, Text, TextInput, StyleSheet, TouchableWithoutFeedback, Button , Keyboard } from 'react-native';
 
 
 const currencyConverted = {
@@ -16,7 +16,7 @@ const CurrencyScreen = ({navigation}) =>
 
 
 	const calculate = (currency) => {
-		if (value === "") {
+		if (value === null) {
 			alert("Enter some Currency");
 		}
 		setenteredNum(parseFloat(value * currencyConverted[currency]))
@@ -25,21 +25,23 @@ const CurrencyScreen = ({navigation}) =>
 
 
 	return (
-		<View style={styles.containerView}>
-			<Text style={styles.text}>CurrencyScreen</Text>
-			
-			<TextInput
-				value={value}
-				onChangeText={(text) => setvalue(text)}
-				style={{ width: 200, borderColor: 'black', borderWidth:1}}
-			/>
+  <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+   <View style={styles.containerView}>
+     <Text style={styles.text}>CurrencyScreen</Text>
 
-			<Text>{enteredNum}</Text>
+     <TextInput
+      value={value}
+      onChangeText={(text) => setvalue(text)}
+      style={{ width: 200, borderColor: "black", borderWidth: 1 }}
+     />
 
-			<Button title="Dollar" onPress={() => calculate("DOLLAR")} />
-			<Button title="Pound" onPress={() => calculate("POUND")} />
-			<Button title="Pound" onPress={() => calculate("EURO")} />
-		</View>
+     <Text>{enteredNum}</Text>
+
+     <Button title="Dollar" onPress={() => calculate("DOLLAR")} />
+     <Button title="Pound" onPress={() => calculate("POUND")} />
+     <Button title="Pound" onPress={() => calculate("EURO")} />
+   </View>
+  </TouchableWithoutFeedback>
  );
 };
 
