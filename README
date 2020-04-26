@@ -36,7 +36,7 @@
  ------------------------------------------------------------------
  //MARK: Tic Tac Toe Screen
 
- - Array fill logic
+ - Array(9).fill() (new Array fill logic)
  - .concat (Adds something in the end)
 
  ------------------------------------------------------------------
@@ -45,3 +45,9 @@
  - playing sound using expo sound
  - removing sound listner after played to avoid performace issues
  - set timeout
+
+ ------------------------------------------------------------------
+ //MARK: Follow Screen
+
+ - .splice(pulling out a element from array)
+ - .push (Pushing a new element to an array)

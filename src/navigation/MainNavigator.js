@@ -8,6 +8,8 @@ import DiceScreen from "../screens/DiceScreen";
 import CurrencyScreen from "../screens/CurrencyScreen";
 import TicTacToeScreen from "../screens/TicTacToeScreen";
 import SoundScreen from "../screens/SoundScreen";
+import FollowScreen from "../screens/FollowScreen";
+import Follow2Screen from "../screens/Follow2Screen";
 
 
 const MainNavigator = createStackNavigator(
@@ -19,6 +21,8 @@ const MainNavigator = createStackNavigator(
   Currency: CurrencyScreen,
   TicTacToe: TicTacToeScreen,
   Sound: SoundScreen,
+  Follow: FollowScreen,
+  Follow2: Follow2Screen,
  },
  {
   initialRouteName: "Home",

@@ -27,10 +27,9 @@ const HomeScreen = ({navigation}) =>
     onPress={() => navigation.navigate("TicTacToe")}
    />
 
-   <Button
-    title="Sound Screen"
-    onPress={() => navigation.navigate("Sound")}
-   />
+   <Button title="Sound Screen" onPress={() => navigation.navigate("Sound")} />
+
+   <Button title="Follow Screen" onPress={() => navigation.navigate("Follow")} />
   </View>
  );
 };
