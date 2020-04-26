@@ -29,7 +29,14 @@ const HomeScreen = ({navigation}) =>
 
    <Button title="Sound Screen" onPress={() => navigation.navigate("Sound")} />
 
-   <Button title="Follow Screen" onPress={() => navigation.navigate("Follow")} />
+   <Button
+    title="Follow Screen"
+    onPress={() => navigation.navigate("Follow")}
+   />
+   <Button
+    title="Photo Screen"
+    onPress={() => navigation.navigate("Photo")}
+   />
   </View>
  );
 };

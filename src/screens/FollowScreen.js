@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { View, Text, TextInput, StyleSheet, TouchableOpacity, Button  } from 'react-native';
+import { View, Text, StyleSheet, Button  } from 'react-native';
 
 const FollowScreen = ({navigation}) =>
 {
@@ -29,7 +29,12 @@ const FollowScreen = ({navigation}) =>
 			<Button
 				title='go to follow2'
 				onPress={() =>
-					navigation.navigate('Follow2', {follow1 : follow, following1: following, doFollow1: doFollow })}
+					navigation.navigate('Follow2',
+						{
+							follow1: follow,
+							following1: following,
+							doFollow1: doFollow
+						})}
 			/>
 		</View>
 		);

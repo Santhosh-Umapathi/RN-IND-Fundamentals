@@ -1,5 +1,7 @@
-import React, {useState} from 'react';
-import { View, Text, TextInput, StyleSheet, TouchableOpacity, Button  } from 'react-native';
+import React, {useState,Component} from 'react';
+import { View, StyleSheet, Button  } from 'react-native';
+
+
 
 const Follow2Screen = ({navigation}) =>
 {
@@ -8,10 +10,8 @@ const Follow2Screen = ({navigation}) =>
 	const following1 = navigation.getParam("following1");
 	const doFollow1 = navigation.getParam("doFollow1");
 
-	const [forceUpdate, setforceUpdate] = useState(null)
+	//const [forceUpdate, setforceUpdate] = useState(null)
 
-	console.log(follow1)
-	console.log(following1)
 
 	return (
   <View style={styles.containerView}>

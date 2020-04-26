@@ -3,17 +3,17 @@
 ------------------------------------------------------------------
 //MARK: DemoScreen
 
-- .map
-- .split
-- .join
+- .map (loop through the array elements)
+- .split (split array with given splitter)
+- .join (Join element at end)
 
 ------------------------------------------------------------------
 //MARK: Background Changer
 
 - passing method to button
 - passing custom style as 2nd argument to styles object
-- Math.floor
-- Math.Random
+- Math.floor (into int)
+- Math.Random (generate random no. 0 -1)
 - String injection
 
 ------------------------------------------------------------------
@@ -25,7 +25,7 @@
  ------------------------------------------------------------------
  //MARK: Currency Screen
 
- - parseFloat
+ - parseFloat(convert into floating no.)
  - Creating Java object
  - Passing Java object key value
  - checking user input if not empty
@@ -47,7 +47,18 @@
  - set timeout
 
  ------------------------------------------------------------------
- //MARK: Follow Screen
+ //MARK: Follow Screen & Follow 2 Screen
 
  - .splice(pulling out a element from array)
  - .push (Pushing a new element to an array)
+ - .map
+
+ ------------------------------------------------------------------
+ //MARK: Photo Screen & Photo Clicker Screen
+
+ - Camera API
+ - useEffect to use once
+ - Flash mode
+ - Camera Flip
+ - Permissions
+ - Image resize mode

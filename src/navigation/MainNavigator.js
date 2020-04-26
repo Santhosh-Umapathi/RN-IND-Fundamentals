@@ -10,6 +10,8 @@ import TicTacToeScreen from "../screens/TicTacToeScreen";
 import SoundScreen from "../screens/SoundScreen";
 import FollowScreen from "../screens/FollowScreen";
 import Follow2Screen from "../screens/Follow2Screen";
+import PhotoScreen from "../screens/PhotoScreen";
+import PhotoClickerScreen from "../screens/PhotoClickerScreen";
 
 
 const MainNavigator = createStackNavigator(
@@ -23,6 +25,8 @@ const MainNavigator = createStackNavigator(
   Sound: SoundScreen,
   Follow: FollowScreen,
   Follow2: Follow2Screen,
+  Photo: PhotoScreen,
+  PhotoClick: PhotoClickerScreen,
  },
  {
   initialRouteName: "Home",
